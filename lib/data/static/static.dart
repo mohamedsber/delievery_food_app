@@ -35,6 +35,7 @@ List<PopularModel> popularList = [
     image: AppImageAsset.meal7,
     rate: '4.9',
   ),
+
 ];
 List<MostPopularModel> mostPopularList = [
   MostPopularModel(
@@ -47,4 +48,64 @@ List<MostPopularModel> mostPopularList = [
     image: AppImageAsset.meal9,
     rate: '4.9',
   ),
+];
+List<RecentItems> recentItems = [
+  RecentItems(
+    title: 'Mulberry Pizza by Josh',
+    image: AppImageAsset.meal10,
+    rate: '4.9',
+  ),
+  RecentItems(
+    title: 'Barita',
+    image: AppImageAsset.meal11,
+    rate: '4.9',
+  ),
+  RecentItems(
+    title: 'Pizza Rush Hour',
+    image: AppImageAsset.meal12,
+    rate: '4.9',
+  ),
+  
+];
+List<MenuList> menuList = [
+  MenuList(
+    title: 'Food',
+    image: AppImageAsset.meal13,
+    itemsNum: '120',
+  ),
+  MenuList(
+    title: 'Beverages',
+    image: AppImageAsset.meal14,
+    itemsNum: '220',
+  ),
+  MenuList(
+    title: 'Desserts',
+    image: AppImageAsset.meal15,
+    itemsNum: '155',
+  ),
+  MenuList(
+    title: 'Promotions',
+    image: AppImageAsset.meal16,
+    itemsNum: '25',
+  ),
+  
+  
+];
+List<OffersItems> offersList = [
+  OffersItems(
+    title: 'Café de Noires',
+    image: AppImageAsset.meal20,
+    rate: '4.9',
+  ),
+  OffersItems(
+    title: 'Isso',
+    image: AppImageAsset.meal21,
+    rate: '4.9',
+  ),
+  OffersItems(
+    title: 'Cafe Beans',
+    image: AppImageAsset.meal22,
+    rate: '4.9',
+  ),
+  
 ];

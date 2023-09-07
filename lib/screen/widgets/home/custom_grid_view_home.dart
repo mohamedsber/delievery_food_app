@@ -21,15 +21,13 @@ class CustomGridViewHomeScreen extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
       height: height,
-      child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 1,
-            mainAxisExtent: mainAxisExtent,
-            mainAxisSpacing: 13,
-          ),
+      child: ListView.builder(
+          itemExtent: mainAxisExtent,
+          
           scrollDirection: scrollDirection,
+          
           itemCount: itemCount,
-          shrinkWrap: true,
+          shrinkWrap: false,
           itemBuilder: itemBuilder),
     );
   }

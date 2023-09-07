@@ -35,7 +35,9 @@ class SigningScreen extends StatelessWidget {
             bottom: 60,
             right: 0,
             left: 0,
-            child: Image.asset(AppImageAsset.monkeylogo),
+            child: Hero(
+              tag: 'monkeylogo',
+              child: Image.asset(AppImageAsset.monkeylogo)),
           ),
           Positioned(
             top: 100,

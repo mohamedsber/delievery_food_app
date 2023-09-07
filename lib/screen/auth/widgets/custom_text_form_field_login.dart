@@ -10,24 +10,27 @@ class CustomTextFormAuth extends StatelessWidget {
   final bool isNumber;
   final bool? obscureText;
   final void Function()? onTapIcon;
+  final String? Function(String?)? validator;
 
-  const CustomTextFormAuth(
-      {Key? key,
-      this.obscureText,
-      this.onTapIcon,
-      required this.hinttext,
-      //required this.labeltext,
-      //required this.iconData,
-      required this.mycontroller,
-      //required this.valid,
-      required this.isNumber})
-      : super(key: key);
+  const CustomTextFormAuth({
+    Key? key,
+    this.obscureText,
+    this.onTapIcon,
+    required this.hinttext,
+    //required this.labeltext,
+    //required this.iconData,
+    required this.mycontroller,
+    //required this.valid,
+    required this.isNumber,
+    required this.validator,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 14),
       child: TextFormField(
+        validator: validator,
         keyboardType: isNumber
             ? const TextInputType.numberWithOptions(decimal: true)
             : TextInputType.text,
